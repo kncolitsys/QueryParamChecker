@@ -1,0 +1,23 @@
+<application>
+
+	<name>QueryParam Checker</name>
+	<version>1.2</version>
+	<description>Check for missing queryparam statements.</description>	
+	<license>You can use this for any purpose whatsoever. QueryParam Scanner created by Peter Boughton</license>
+    <menucontributions>
+
+		<contribution target="projectview">
+			<menu name="QueryParam Scanner">
+	    		<action name="Find Missing QueryParam Statements" handlerid="qphandler" showResponse="true">
+	    			<dialog height="600" width="700" />
+				</action>
+			</menu>
+		</contribution>
+
+    </menucontributions>	
+
+	<handlers>		
+		<handler id="qphandler" type="CFM" filename="process.cfm" />
+	</handlers>
+
+</application>
